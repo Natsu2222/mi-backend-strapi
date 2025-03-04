@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acuarios",
+  "info": {
+    "singularName": "acuario",
+    "pluralName": "acuarios",
+    "displayName": "acuario"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

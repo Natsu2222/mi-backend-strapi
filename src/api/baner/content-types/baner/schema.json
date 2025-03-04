@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "baners",
+  "info": {
+    "singularName": "baner",
+    "pluralName": "baners",
+    "displayName": "Baner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "instrucciones": {
+      "type": "text"
+    },
+    "acuarios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::acuario.acuario"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
