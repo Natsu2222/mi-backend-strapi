@@ -15,6 +15,17 @@ export default [
       },
     },
   },
+
+  {
+    name: "strapi::cors",
+    config: {
+      origin: ["https://shrimpstore.vercel.app/", "http://localhost:3000"], // Añade los dominios de tu frontend
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+      headers: ["Content-Type", "Authorization"],
+      credentials: true,
+    },
+  },
+
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
