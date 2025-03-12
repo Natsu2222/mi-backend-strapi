@@ -8,7 +8,7 @@ export default [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", "https://res.cloudinary.com"],
+          "img-src": ["'self'", "data:", "blob:", "https://res.cloudinary.com/dughfp61j"],
           "media-src": ["'self'", "data:", "blob:"],
           upgradeInsecureRequests: null,
         },
